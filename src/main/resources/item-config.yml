@@ -1,0 +1,24 @@
+#Example format for item stored in configuration file
+
+item:
+  type: 'STONE'  #Type name or id
+  durability: 0  #Durability
+  amount: 1      #Amount
+  meta:
+    display: "I am a stone block!"                             #Display name
+    lore: ["Line 1", "Line 2"]                                 #Lore
+    flags: ["HIDE_ENCHANTS", "HIDE_POTION_EFFECTS"]            #Item flags
+    enchants: ["DURABILITYx1", "KNOCKBACKx2-f", "DAMAGE_ALL"]  #Item enchantments - <name>[x<level>][-f(orce)]
+  ## Type specific meta ##
+   # Banner #
+    patterns: ["BORDER-blue"]  #Banner patterns - <name>-<color>
+   # Book #
+    author: "inventivetalent"             #Displayed author of the book
+    title: "The most amazing book ever!"  #Displayed book title
+    pages: ["Page #1", "Page #2!"]        #Page content
+   # Skull #
+    owner: "md_5"
+   # Leather Armor #
+    color: "R:0 G:255 B:0"  #Armor color - RGB values
+    color: "green"          #Armor color - dye color name
+
