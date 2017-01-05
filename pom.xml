@@ -113,14 +113,6 @@
         <repository>
             <id>mcstats-repo</id>
             <url>http://repo.mcstats.org/content/groups/public/</url>
-            <layout>default</layout>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>howaner-repo</id>
-            <url>http://repo.howaner.de/</url>
         </repository>
     </repositories>
 
