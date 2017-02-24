@@ -3,7 +3,6 @@ package org.inventivetalent.itembuilder;
 import org.bukkit.Bukkit;
 import org.bukkit.inventory.ItemStack;
 
-import javax.annotation.Nonnull;
 import java.util.Comparator;
 
 /**
@@ -111,7 +110,7 @@ public class ItemComparator implements Comparator<ItemStack> {
 	 * @param b Second {@link ItemStack} to compare with the first
 	 * @return <code>true</code> if the {@link ItemStack} are equal, <code>false</code> otherwise
 	 */
-	public boolean equals(@Nonnull ItemStack a, @Nonnull ItemStack b) {
+	public boolean equals(ItemStack a, ItemStack b) {
 		if (a.getType() != b.getType()) { return false; }
 		if (!ignoreAmount) {
 			if (a.getAmount() != b.getAmount()) { return false; }

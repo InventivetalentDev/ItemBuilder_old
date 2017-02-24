@@ -7,7 +7,7 @@
 
     <groupId>org.inventivetalent</groupId>
     <artifactId>itembuilder</artifactId>
-    <version>1.0.10</version>
+    <version>1.1.0-SNAPSHOT</version>
 
     <build>
         <finalName>ItemBuilder_v${project.version}</finalName>
@@ -44,7 +44,6 @@
                         <configuration>
                             <artifactSet>
                                 <includes>
-                                    <include>org.mcstats.*</include>
                                     <include>org.inventivetalent:itembuilder**</include>
                                 </includes>
                             </artifactSet>
@@ -70,16 +69,6 @@
             <artifactId>spigot-api</artifactId>
             <version>1.9-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.bukkit</groupId>
-            <artifactId>craftbukkit</artifactId>
-            <version>1.9-R0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.mcstats.bukkit</groupId>
-            <artifactId>metrics-lite</artifactId>
-            <version>R8-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
@@ -107,10 +96,6 @@
         <repository>
             <id>techcable-repo</id>
             <url>http://repo.techcable.net/content/groups/public/</url>
-        </repository>
-        <repository>
-            <id>mcstats-repo</id>
-            <url>http://repo.mcstats.org/content/groups/public/</url>
         </repository>
     </repositories>
 

@@ -7,7 +7,6 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.*;
 import org.inventivetalent.itembuilder.util.EnchantmentGlow;
 
-import javax.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -15,7 +14,7 @@ import java.util.Map;
 
 public class MetaBuilder extends Formattable {
 
-	@Nullable protected ItemBuilder itemBuilder;
+	 protected ItemBuilder itemBuilder;
 	protected           ItemMeta    meta;
 
 	/**
@@ -372,7 +371,6 @@ public class MetaBuilder extends Formattable {
 	/**
 	 * @return The {@link ItemBuilder} assigned to this MetaBuilder, or null if constructed without one
 	 */
-	@Nullable
 	public ItemBuilder item() {
 		if (this.itemBuilder != null) {
 			this.itemBuilder.withMeta(this);
